@@ -6,5 +6,8 @@ folders = input("Please provide list of dir(s) with spaces inbetween: ").split()
 
 # Looping through the dir(s)
 for folder in folders:
-    file = os.listdir(folder)
-    print(file)
+    files = os.listdir(folder)
+    print(f"====== Listing files in {folder} folder =====")
+    
+    for file in files:
+        print(file)
