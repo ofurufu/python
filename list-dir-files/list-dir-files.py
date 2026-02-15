@@ -9,13 +9,21 @@ for dir in dirs:
     try:
         files = os.listdir(dir)
     except FileNotFoundError:
-        print(f"Please enter a valid dir name in stead of {dir}.")
+        print(f"Error: Please enter a valid dir name in stead of {dir}.")
         continue
     except PermissionError:
-        print("You do not have permission to view content in this dir")
+        print("Error: You do not have permission to view content in this dir")
         continue
     
-    print(f"====== Listing files in {dir} =====")
+    print(f"\n====== Listing files in {dir} =====")
     
+    # Count the number of files and print it
+    count = len(files)
+    if count == 0:
+        print("(empty directory)")
+    else:
+        print(f"({count} item{'s' if count != 1 else ''})")
+    
+    # Looping through the files and print each file name
     for file in files:
         print(file)
