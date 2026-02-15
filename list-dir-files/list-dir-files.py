@@ -27,3 +27,5 @@ for dir in dirs:
     # Looping through the files and print each file name
     for file in files:
         print(file)
+        
+print("\n===== Done listing all dir(s) ===== ")
