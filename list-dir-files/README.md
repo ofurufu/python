@@ -111,5 +111,7 @@ Contributions and suggestions are welcome—please open an issue or submit a pul
 This project is unlicensed. Add a `LICENSE` file if you wish to apply an open-source license (for example, MIT).
 
 ## Author
-
+ Ayodele Adewuyi
+ 
 README for `list-dir-files.py`.
+
